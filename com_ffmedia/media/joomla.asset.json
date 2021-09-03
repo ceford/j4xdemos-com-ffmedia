@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "com_ffmedia",
+  "version": "4.0.0",
+  "description": "Joomla CMS",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "com_ffmedia.ffmedia",
+      "type": "script",
+      "uri": "com_ffmedia/ffmedia.js",
+      "dependencies": [
+        "core"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    },
+    {
+      "name": "com_ffmedia.ffmedia",
+      "type": "style",
+      "uri": "com_ffmedia/ffmedia.css"
+    },
+    {
+      "name": "com_ffmedia.ffmedia-site",
+      "type": "script",
+      "uri": "com_ffmedia/ffmedia-site.js",
+      "dependencies": [
+        "core"
+      ],
+      "attributes": {
+        "defer": true
+      }
+    }
+  ]
+}

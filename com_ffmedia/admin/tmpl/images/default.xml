@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_FFMEDIA_IMAGES_VIEW_DEFAULT_TITLE">
+		<message>
+			<![CDATA[COM_FFMEDIA_IMAGES_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<fieldset name="request" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+
+		</fieldset>
+
+		<!-- Add fields to the parameters object for the layout. -->
+
+		<!-- Scroll. -->
+		<fieldset name="basic">
+
+		</fieldset>
+
+		<!-- Advanced options. -->
+		<fieldset name="advanced">
+			<field name="imagepath"
+			type="text"
+			label="Image Path"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="filter">
+		<field
+			name="media_type"
+			type="list"
+			label="COM+FFMEDIA_FILTER_MEDIATYPE"
+			onchange="this.form.submit();"
+			default="images"
+			>
+			<option value="images">COM_FFMEDIA_FIELDSET_IMAGES_LABEL</option>
+			<option value="files">COM_FFMEDIA_FIELDSET_FILES_LABEL</option>
+		</field>
+
+	</fields>
+</form>

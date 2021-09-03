@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="J4xdemos\Component\Ffmedia\Administrator\Field">
+	<fields name="filter">
+		<field
+			name="search"
+			type="text"
+			inputmode="search"
+			label="COM_FFMEDIA_FILES_FILTER_SEARCH_LABEL"
+			description="COM_FFMEDIA_FILES_FILTER_SEARCH_DESC"
+			hint="JSEARCH_FILTER"
+		/>
+
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			onchange="this.form.submit();"
+			>
+			<option value="0">JOPTION_SELECT_PUBLISHED</option>
+			<option value="1">JPUBLISHED</option>
+			<option value="-2">JTRASHED</option>
+			<option value="-3">COM_FFMEDIA_FILTER_OPTION_DELETED</option>
+		</field>
+
+		<field
+			name="depth"
+			type="list"
+			label="COM_FFMEDIA_FILTER_DEPTH"
+			onchange="this.form.submit();"
+			>
+			<option value="">COM_FFMEDIA_FILTER_OPTION_DEPTH_SELECT</option>
+			<option value="folder">COM_FFMEDIA_FILTER_OPTION_DEPTH_FOLDER</option>
+			<option value="tree">COM_FFMEDIA_FILTER_OPTION_DEPTH_TREE</option>
+		</field>
+
+		<field
+			name="extension"
+			type="fileextensions"
+			label="COM_FFMEDIA_FILTER_EXTENSION"
+			onchange="this.form.submit();"
+			>
+		</field>
+	</fields>
+
+	<fields name="list">
+		<field
+			name="fullordering"
+			type="list"
+			label="JGLOBAL_SORT_BY"
+			statuses="*,0,1,2,-2"
+			onchange="this.form.submit();"
+			default="a.id DESC"
+			validate="options"
+			>
+			<option value="">JGLOBAL_SORT_BY</option>
+			<option value="a.id ASC">JGRID_HEADING_ID_ASC</option>
+			<option value="a.id DESC">JGRID_HEADING_ID_DESC</option>
+			<option value="a.extension ASC">COM_FFMEDIA_MEDIA_EXTENSION_ASC</option>
+			<option value="a.extension DESC">COM_FFMEDIA_MEDIA_EXTENSION_DESC</option>
+			<option value="a.file_name ASC">COM_FFMEDIA_MEDIA_FILE_NAME_ASC</option>
+			<option value="a.file_name DESC">COM_FFMEDIA_MEDIA_FILE_NAME_DESC</option>
+			<option value="a.date_created ASC">COM_FFMEDIA_MEDIA_DATE_CREATED_ASC</option>
+			<option value="a.date_created DESC">COM_FFMEDIA_MEDIA_DATE_CREATED_DESC</option>
+			<option value="a.size ASC">COM_FFMEDIA_MEDIA_SIZE_ASC</option>
+			<option value="a.size DESC">COM_FFMEDIA_MEDIA_SIZE_DESC</option>
+		</field>
+
+		<field
+			name="limit"
+			type="limitbox"
+			label="JGLOBAL_LIST_LIMIT"
+			default="25"
+			onchange="this.form.submit();"
+		/>
+	</fields>
+</form>

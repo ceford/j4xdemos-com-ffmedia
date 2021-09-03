@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset
+		name="images"
+		label="COM_FFMEDIA_FIELDSET_IMAGES_LABEL">
+
+		<field
+			name="image_upload_extensions"
+			type="text"
+			label="COM_FFMEDIA_FIELD_IMAGE_EXTENSIONS_LABEL"
+			description="COM_FFMEDIA_FIELD_IMAGE_EXTENSIONS_DESC"
+			size="50"
+			default="bmp,gif,ico,jpg,jpeg,png"
+		/>
+
+		<field
+			name="image_upload_maxsize"
+			type="number"
+			label="COM_FFMEDIA_FIELD_IMAGE_MAXIMUM_SIZE_LABEL"
+			description="COM_FFMEDIA_FIELD_IMAGE_MAXIMUM_SIZE_DESC"
+			validate="number"
+			min="0"
+			default="10"
+		/>
+
+		<field
+			name="image_path"
+			type="text"
+			label="COM_FFMEDIA_FIELD_IMAGE_FOLDER_PATH_LABEL"
+			description="COM_FFMEDIA_FIELD_IMAGE_FOLDER_PATH_DESC"
+			size="50"
+			default="images"
+		/>
+
+		<field
+			name="thumbnail_prefix"
+			type="text"
+			label="COM_FFMEDIA_FIELD_THUMBNAIL_PREFIX_LABEL"
+			description="COM_FFMEDIA_FIELD_THUMBNAIL_PREFIX_DESC"
+			size="10"
+			default="tn-"
+		/>
+
+	</fieldset>
+
+	<fieldset
+		name="files"
+		label="COM_FFMEDIA_FIELDSET_FILES_LABEL">
+
+		<field
+			name="file_upload_extensions"
+			type="text"
+			label="COM_FFMEDIA_FIELD_LEGAL_FILE_EXTENSIONS_LABEL"
+			description="COM_FFMEDIA_FIELD_LEGAL_FILE_EXTENSIONS_DESC"
+			size="50"
+			default="csv,doc,odp,ods,odt,pdf,ppt,txt,xls"
+		/>
+		
+		<field
+			name="file_upload_maxsize"
+			type="number"
+			label="COM_FFMEDIA_FIELD_FILE_MAXIMUM_SIZE_LABEL"
+			description="COM_FFMEDIA_FIELD_FILE_MAXIMUM_SIZE_DESC"
+			validate="number"
+			min="0"
+			default="10"
+		/>
+
+		<field
+			name="file_path"
+			type="text"
+			label="COM_FFMEDIA_FIELD_PATH_FILE_FOLDER_LABEL"
+			description="COM_FFMEDIA_FIELD_PATH_FILE_FOLDER_DESC"
+			size="50"
+			default="files"
+		/>
+
+	</fieldset>
+
+	<fieldset
+		name="trash"
+		label="COM_FFMEDIA_FIELDSET_TRASH_LABEL">
+
+		<field
+			name="trash_path"
+			type="text"
+			label="COM_FFMEDIA_FIELD_PATH_TRASH_FOLDER_LABEL"
+			description="COM_FFMEDIA_FIELD_PATH_TRASH_FOLDER_DESC"
+			size="50"
+			default="trash"
+		/>
+
+	</fieldset>
+
+
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_ffmedia"
+			section="component"
+		 />
+	</fieldset>
+</config>

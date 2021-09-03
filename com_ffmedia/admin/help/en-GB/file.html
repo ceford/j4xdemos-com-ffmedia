@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Help for Ffmedia Edit File</title>
+<style>
+html {
+	font-family: sans-serif;
+	margin: .5rem;
+	line-height: 1.15;
+}
+body {
+	font-family: Arial,Helvetica,Sans Serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #212529;
+	text-align: left;
+}
+h1 {
+	font-size: 2rem;
+}
+h1, h2, h3 {
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+</style>
+</head>
+<body>
+
+<h1>Ffmedia New or Edit File</h1>
+
+<h3>New or Changed Files</h3>
+
+<p>For a new file all fields must be completed and a file selected. For an existing file 
+you can change the metadata without changing the file. Or you can change the file 
+without changing the metadata. Or you can change both at the same time.</p>
+
+<h2>File Tab</h2>
+
+<ul>
+	<li>
+		<strong>Browse.</strong> For a new file, this is the first item in the form.
+		It allows you to select for upload any file in the list of allowed file types. 
+		When editing existing file metadata this item moves to the bottom of the list 
+		and becomes optional.
+	</li>
+	<li>
+		<strong>Short description.</strong> This is a few words to say what the file
+		contains. It is used to create a human readable filename.
+	</li>
+	<li>
+		<strong>File name.</strong> This is constructed from the Short description text 
+		but only allows alphanumeric characters and the minus symbol, which is used as 
+		a word separator.
+	</li>
+	<li>
+		<strong>Long Description.</strong> This is used for keyword searching.
+	</li>
+	<li>
+		<strong>ID.</strong> This is the database record number set on record entry.
+		It is useful for trouble shooting.
+	</li>
+</ul>
+
+<h2>Toolbar Buttons</h2>
+
+<ul>
+	<li>
+		<strong>Save.</strong> Saves the File data and the file.
+	</li>
+	<li>
+		<strong>Save and Close.</strong> Saves and returns to the Files list page.
+	</li>
+	<li>
+		<strong>Cancel.</strong> Closes the form.
+	</li>
+</ul>
+
+</body>
+</html>

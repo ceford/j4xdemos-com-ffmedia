@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Help for Ffmedia Folders</title>
+<style>
+html {
+	font-family: sans-serif;
+	margin: .5rem;
+	line-height: 1.15;
+}
+body {
+	font-family: Arial,Helvetica,Sans Serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	color: #212529;
+	text-align: left;
+}
+h1 {
+	font-size: 2rem;
+}
+h1, h2, h3 {
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+</style>
+</head>
+<body>
+
+<h1>Ffmedia Folders</h1>
+
+<p>This page shows the list of folders in use for storing either Images or Files. Use the
+Select Media Type drop-down list to switch. The list is displayed on the left of the screen,
+or near the top on narrow screens.</p>
+
+<p>Select a Folder Tree item to perform one of the following actions:</p>
+
+<h2>Actions</h2>
+
+<dl>
+
+<dt>Index Selected Folder</dt>
+<dd>
+This action processes the files in the selected folder and inserts or updates
+a record in the database. 
+</dd>
+
+<dt>Index All Folders</dt>
+
+<dd>
+This action processes all of the files in all of the folders and inserts or updates
+a record in the database. It may take quite a long time, perhaps several seconds for
+1000 images. If some folders contain a lot of files it may appear to have stopped. 
+Please be patient - there is no completion notice.
+</dd>
+
+<dt>Index Selected Folder</dt>
+<dd>
+This action processes all of the files in the selected folder and inserts or updates
+a record in the database. Use this option if indexing all folders runs into time-out 
+trouble.
+</dd>
+
+<dt>Hash All Folders</dt>
+<dd>
+This action processes all of the files in the selected folder and updates the file hash
+field in the database record. It may take quite a long time. Perhaps several seconds for
+1000 images. The hash field is not currently used but may be used in the future to 
+identify identical files.
+</dd>
+
+<dt>Hash Selected Folder</dt>
+<dd>
+This action processes all of the files in the selected folder and updates the file hash
+field in the database record. Use this option if hashing all folders runs into time-out 
+trouble.
+</dd>
+
+</dl>
+
+<h2>Folders</h2>
+
+<dl>
+<dt>New Folder</dt>
+<dd>
+This action prompts for a new folder name and creates the folder. All characters except 
+alphanumeric and minus (-) are replace by <strong>-</strong> (minus). You will be asked 
+to confirm that the file name is acceptable. Please use minus characters
+to separate words.
+</dd>
+
+<dt>Delete if Empty</dt>
+<dd>
+This action deletes a folder only if it is empty.
+</dd>
+
+</dl>
+
+</body>
+</html>

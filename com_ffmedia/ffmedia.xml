@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+	<name>com_ffmedia</name>
+	<author>Clifford E Ford</author>
+	<creationDate>September 2021</creationDate>
+	<copyright>(C) 2021 Clifford E Ford. All rights reserved.
+	</copyright>
+	<license>GNU General Public License version 3</license>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>0.4.0</version>
+	<description>COM_FFMEDIA_XML_DESCRIPTION</description>
+	<namespace path="src">J4xdemos\Component\Ffmedia</namespace>
+
+	<media destination="com_ffmedia" folder="media">
+		<file>joomla.asset.json</file>
+		<folder>css</folder>
+		<folder>js</folder>
+	</media>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/ffmedia.install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	
+	<scriptfile>script.php</scriptfile>
+	
+	<files folder="site">
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/com_ffmedia.ini</language>
+	</languages>
+	
+	<administration>
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<folder>forms</folder>
+			<folder>help</folder>
+			<folder>layouts</folder>
+			<folder>language</folder>
+			<folder>services</folder>
+			<folder>sql</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+		</files>
+		<menu img="class:default">com_ffmedia</menu>
+		<submenu>
+			<!--
+				Note that all & must be escaped to &amp; for the file to be valid
+				XML and be parsed by the installer
+			-->
+			<menu
+				link="option=com_ffmedia&amp;view=images"
+				view="images"
+				img="images"
+				alt="Ffmedia/Images"
+				>
+				com_ffmedia_images
+			</menu>
+			<menu
+				link="option=com_ffmedia&amp;view=files"
+				view="files"
+				img="files"
+				alt="Ffmedia/Files"
+				>
+				com_ffmedia_files
+			</menu>
+			<menu
+				link="option=com_ffmedia&amp;view=folders"
+				view="folders"
+				img="folders"
+				alt="Ffmedia/Folders"
+				>
+				com_ffmedia_folders
+			</menu>
+		</submenu>
+	</administration>
+	<dashboards>
+		<dashboard title="COM_FFMEDIA_DASHBOARD_TITLE" icon="icon-file-alt">ffmedia</dashboard>
+	</dashboards>
+</extension>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout title="COM_FFMEDIA_IMAGES_VIEW_DEFAULT_TITLE" option="COM_FFMEDIA_IMAGES_VIEW_DEFAULT_OPTION">
+		<help
+			key="JHELP_MENUS_MENU_ITEM_FFMEDIA"
+		/>
+		<message>
+			<![CDATA[COM_FFMEDIA_IMAGES_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the request variables for the layout. -->
+	<fields name="request">
+	</fields>
+
+	<!-- Add fields to the parameters object for the layout. -->
+		<fields name="params">
+
+		<fieldset name="request" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+
+		</fieldset>
+
+		<!-- Add fields to the parameters object for the layout. -->
+
+		<!-- Options -->
+		<fieldset name="basic">
+			<field
+				name="folderpath"
+				type="sql"
+				description="COM_FFMEDIA_FIELD_FOLDER_DESC"
+				label="COM_FFMEDIA_FIELD_FOLDER_LABEL"
+				extension="com_ffmedia"
+				query = "SELECT folder_path FROM `#__ffmedia` WHERE folder_path LIKE '/images%' AND state = 1 GROUP BY folder_path ORDER BY folder_path ASC"
+				key_field="folder_path"
+				value_field="folder_path"
+				required="true"
+				default="/images"
+			/>
+		</fieldset>
+
+		<!-- Advanced options. -->
+		<fieldset name="advanced">
+
+		</fieldset>
+	</fields>
+</metadata>
