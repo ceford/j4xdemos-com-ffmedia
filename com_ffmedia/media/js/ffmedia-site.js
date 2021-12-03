@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 		switch (selected) {
 			case 'zoom':
 				var tag = '<img src="'+root+url+'" class="cover">';
-				title.innerText = Joomla.Text._('COM_FFMEDIA_JS_IMAGE_ZOOM') + ' ' + alt;
+				title.innerText = alt;
 				body.classList.add("text-center");
 				body.innerHTML = tag;
 				modal.open();

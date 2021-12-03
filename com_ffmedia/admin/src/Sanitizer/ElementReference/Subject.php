@@ -1,5 +1,11 @@
 <?php
+/**
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
 namespace J4xdemos\Component\Ffmedia\Administrator\Sanitizer\ElementReference;
+
+defined('_JEXEC') or die;
 
 class Subject
 {

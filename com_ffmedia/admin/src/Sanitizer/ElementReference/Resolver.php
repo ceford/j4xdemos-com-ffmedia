@@ -1,5 +1,11 @@
 <?php
+/**
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
 namespace J4xdemos\Component\Ffmedia\Administrator\Sanitizer\ElementReference;
+
+\defined('JPATH_PLATFORM') or die;
 
 use J4xdemos\Component\Ffmedia\Administrator\Sanitizer\data\XPath;
 use J4xdemos\Component\Ffmedia\Administrator\Sanitizer\Exceptions\NestingException;

@@ -1,6 +1,11 @@
 #!/usr/bin/env php
 <?php
 
+/**
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+
 /*
  * Simple program that uses svg-sanitizer
  * to find issues in files specified on the
